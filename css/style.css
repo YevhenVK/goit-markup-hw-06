@@ -726,3 +726,52 @@ img {
   color: var(--accent-color);
 }
 /* ------------------------------------ */
+
+/* -----Формы заполнения----- */
+input {
+  padding: 8px;
+  font-family: inherit;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+textarea {
+  resize: none;
+}
+
+.form {
+  width: 448px;
+  height: 58;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
+.form-field input {
+  /* margin: 0;
+  padding: 0; */
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-field label {
+  margin-bottom: 4px;
+}
+/* .form .form-field:not(3n) {
+  margin-bottom: 10px;
+} */
+/* .form-field label:not(:last-child) {
+  padding-bottom: 10px;
+} */
+.form-field input::placeholder {
+  color: #188ce8;
+}
