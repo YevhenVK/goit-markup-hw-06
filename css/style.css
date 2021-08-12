@@ -745,7 +745,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.form {
+.form-group {
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -758,7 +758,6 @@ img {
 
 .form-icon {
   position: absolute;
-  background-color: lightcoral;
   left: 12px;
   top: 28px;
   fill: rgba(33, 33, 33, 1);
@@ -806,6 +805,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .commentary::placeholder {
   font-family: inherit;
   font-style: normal;
@@ -816,12 +816,14 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .form-policy-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-left: 9px;
   color: #757575;
 }
 /* .form-policy-text::before {
@@ -833,12 +835,27 @@ img {
   margin-right: 9px;
   cursor: pointer;
 } */
+/* .form-policy-checkbox:checked + .form-policy-text::before {
+  background-image: url(../img/svg-image/Vector.svg);
+  background-size: cover;
+  border: none;
+} */
+
+/* .hidden-checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+} */
 
 .form-button {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 10px 55px;
   font-style: normal;
   font-weight: 700;
