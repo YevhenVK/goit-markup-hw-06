@@ -461,9 +461,12 @@ img {
   background-color: var(--secondary-background-color);
   padding: 60px 0 60px 0;
 }
-.footer-page .ground {
-  display: -webkit-box;
+.footer-page .location {
+  /* display: -webkit-box; */
+  display: flex;
+  align-items: baseline;
 }
+
 .footer-contact li:not(:last-child) {
   margin-bottom: 6px;
 }
@@ -503,20 +506,24 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.footer-social > li {
-  display: inline-flex;
+.footer-social {
+  display: flex;
 }
 .footer-social-page {
   display: flex;
-  width: 44px;
-  height: 44px;
   align-items: center;
   justify-content: center;
+  /* padding: 12px; */
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   fill: var(--secondary-text-color);
   background: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms var(--cubic-bezier);
+}
+.footer-social-item {
+  margin: 0;
 }
 
 .footer-social-item:not(:last-child) {
@@ -531,6 +538,73 @@ img {
 .footer-conection {
   margin-left: 70px;
 }
+
+/* ------Подпишитесь на рассылку------ */
+.subscribe-form {
+  margin-left: auto;
+}
+.subscribe-box {
+  display: flex;
+}
+.subscribe-form-place {
+  position: relative;
+}
+.subscribe-title {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.subscribe-form-input {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: rgba(47, 48, 58, 1);
+  color: #fff;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+}
+.subscribe-form-button {
+  display: flex;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  margin-bottom: 0;
+  margin-left: 12px;
+  font-style: normal;
+  font-family: inherit;
+  text-align: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-form-button:focus,
+.subscribe-form-button:hover {
+  background-color: var(--primary-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* ----------------------------------- */
 
 /* ---------Portfolio------------ */
 .filter {
@@ -873,67 +947,5 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
-/* ----------------------------------- */
-
-/* ------Подпишитесь на рассылку------ */
-.subscribe-form {
-  margin-left: 93px;
-  margin-right: 0;
-}
-.subscribe-title {
-  color: var(--secondary-text-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.subscribe-form-input {
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: rgba(47, 48, 58, 1);
-  color: #fff;
-}
-
-.subscribe-icon {
-  margin-left: 10px;
-}
-.subscribe-form-button {
-  display: inline-flex;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-  margin-bottom: 0;
-  margin-left: 12px;
-  font-style: normal;
-  font-family: inherit;
-  text-align: center;
-  align-items: center;
-  width: 200px;
-  padding: 10px 28px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-  border: none;
-  cursor: pointer;
-}
-
-.subscribe-form-button:focus,
-.subscribe-form-button:hover {
-  background-color: var(--primary-button-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 /* ----------------------------------- */
