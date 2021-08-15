@@ -942,8 +942,17 @@ img {
   transform: scale(1.2);
   border: none;
 }
+.form-policy-link {
+  font-style: 400;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
 
-.hidden-checkbox {
+/* .hidden-checkbox {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -952,7 +961,7 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
+} */
 
 .form-button {
   margin-left: auto;
