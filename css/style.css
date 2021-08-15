@@ -840,9 +840,18 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus + .form-icon {
+  fill: #2196f3;
+}
+
+.form-input:focus,
+.commentary:focus {
+  border: 1px solid #2196f3;
+}
+
 .form-field label {
   display: flex;
-  font-family: inherit;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -861,7 +870,8 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .commentary {
   padding: 12px 16px;
@@ -872,8 +882,9 @@ img {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 20px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
+  outline: none;
 }
 
 .form-policy {
@@ -902,6 +913,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 /* .form-policy-text::before {
   content: "";
   width: 16px;
