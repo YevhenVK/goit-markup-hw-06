@@ -840,17 +840,14 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus + .form-icon {
+.form-field:focus-within > .form-icon {
   fill: #2196f3;
 }
-
-.form-input:focus,
-.commentary:focus {
+.form-field:focus-within > .form-input:focus,
+.form-field:focus-within > .commentary:focus {
   border: 1px solid #2196f3;
 }
-
-.form-field label {
-  display: flex;
+.form-field-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -860,6 +857,7 @@ img {
   color: #757575;
   margin-bottom: 4px;
 }
+
 .form-input {
   padding: 0;
   height: 40px;
